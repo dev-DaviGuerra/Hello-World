@@ -1,4 +1,1 @@
-<h1>HELLO</h1>
-<ul>
-    <li>Hi</li>
-</ul>
+<h1>HELLO {{ $nome }}, você tem {{ $idade }} anos</h1>
