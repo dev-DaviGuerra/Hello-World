@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HelloController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -7,6 +8,7 @@ Route::get('/', function () {
 });
 
 Route::get('/hello/{name}/{idade}', function($name, $idade) {
+
     $data = [
         'nome' => $name,
         'idade' => $idade
@@ -14,7 +16,4 @@ Route::get('/hello/{name}/{idade}', function($name, $idade) {
     return view('hello', $data);
 });
 
-Route::get('/calcula-idade/{nascimento}/{nome}', function($nascimento, $nome) {
-    $data = ['nasc' => $nascimento, 'nome' => $nome];
-    return view('calcular-idade', $data);
-});
+Route::get('/calcula-idade/{nascimento}/{nome}', [HelloController::class, 'calcularIdade']);
