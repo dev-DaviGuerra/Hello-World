@@ -1,7 +1,11 @@
-<h1>Seja bem-vindo<h1>
-<a href="{{ Route('services') }}">Saiba mais sobre nossos serviços</a>
-<br>
-<a href="{{ Route('contact') }}">Entre em contato</a>
+@extends('layout')
+
+@section('title', 'Meu site - Home')
+
+@section('content')
+<h1>Seja bem-vindo</h1>
+@endsection
+
 
 <!--
 Caminho Relativo: /home
