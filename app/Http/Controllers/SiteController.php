@@ -8,6 +8,7 @@ class SiteController extends Controller
 {
     public function home()
 {
-        return view('home');
+        $title = 'Meu site - Home';
+        return view('home', ['title' => $title ]);
 }
 }

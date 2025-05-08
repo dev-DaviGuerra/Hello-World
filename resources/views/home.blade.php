@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Meu site - Home')
+@section('title', $title)
 
 @section('content')
 <h1>Seja bem-vindo</h1>

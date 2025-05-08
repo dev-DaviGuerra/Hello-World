@@ -8,6 +8,7 @@ class ServicosDisponiveis extends Controller
 {
     public function servicos()
     {
-        return view('services');
+        $title = 'Meu site - Serviços - '. rand(0,10);
+        return view('services', ['title' => $title]);
     }
 }

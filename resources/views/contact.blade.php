@@ -1,6 +1,7 @@
 @extends('layout')
 
-@section('title', 'Meu site - Suporte')
+@section('title', $title)
+
 
 
 @section('content')
