@@ -15,7 +15,7 @@
     </main>
     <hr />
     <footer>
-        @include('footer')
+        @includeWhen($mostrarRodape ?? false, 'footer')
     </footer>
     <hr />
 </body>
